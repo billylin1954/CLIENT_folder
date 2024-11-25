@@ -1,5 +1,5 @@
 {
-  "proxy": "http://localhost:3001",
+  "proxy": "https://ramen-iva0.onrender.com",
   "name": "client",
   "version": "0.1.0",
   "private": true,
