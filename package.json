@@ -1,5 +1,5 @@
 {
-  "proxy": "https://ramen-iva0.onrender.com",
+  "proxy": "https://first-vite.onrender.com",
   "name": "client",
   "version": "0.1.0",
   "private": true,
