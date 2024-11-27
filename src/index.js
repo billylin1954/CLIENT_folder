@@ -63,38 +63,7 @@ function saveClicks() {
   //dataToSend.clicks=clicks;
   //console.log("Clicks saved:", clicks);
 }
-function A() {
-  const [data, setData] = React.useState(null);
 
-  React.useEffect(() => {
-    
-      fetch('/api', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(datatosend),
-    })
-    .then((res) => res.json())
-    .then((data) => setData(datatosend))
-    .then(response => response.json())
-    .then(data => {
-        console.log('Response from server:', data);
-    })
-    .catch(error => {
-        console.error('Error sending data:', error)
-    });
-  }, []);
-
-  return (
-    <div className="App">
-     
-        
-        <p>o</p>
-  
-    </div>
-  );
-}
 function loadClicks() {
   const savedClicks = localStorage.getItem("clicks");
   const ramenrate = localStorage.getItem("ramenRate")
