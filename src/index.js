@@ -31,8 +31,8 @@ function send_data(){
     method: 'POST',
     headers: {
         'Content-Type': 'application/json',
+   'Access-Control-Allow-Origin':'*'
     },
-    res.header('Access-Control-Allow-Origin', 'https://first-vite.onrender.com/api');
     body: JSON.stringify(datatosend),
 })
 .then((res) => res.json())
